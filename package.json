@@ -1,0 +1,21 @@
+{
+  "name": "private-tech-transfer",
+  "version": "1.0.0",
+  "description": "Private Technology Transfer Platform with FHE",
+  "scripts": {
+    "deploy": "hardhat run scripts/deploy.js --network sepolia",
+    "deploy:sepolia": "hardhat run scripts/deploy-sepolia.js --network sepolia",
+    "deploy:local": "hardhat run scripts/deploy-sepolia.js",
+    "compile": "hardhat compile",
+    "test": "hardhat test"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "hardhat": "^2.19.0",
+    "dotenv": "^16.3.1"
+  },
+  "dependencies": {
+    "@fhevm/solidity": "^0.7.0",
+    "@zama-fhe/oracle-solidity": "^0.1.0"
+  }
+}
